@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Email List</title>
+</head>
+<body>
+    <!-- Axios -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.2/axios.min.js"></script>
+    <!-- Vue -->
+    <script src='https://unpkg.com/vue@3/dist/vue.global.js'></script>
+
+    <div id="app">
+        <main>
+            <h1>Email list:</h1>
+            <ul class="mail-list">
+                <li class="mail-address" v-for="email in emailList"> {{ email }} </li>
+            </ul>
+        </main>
+    </div>
+    
+    <!-- Javascript -->
+    <script src="./js/script.js"></script>
+</body>
+</html>
