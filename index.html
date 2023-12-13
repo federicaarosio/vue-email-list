@@ -14,7 +14,7 @@
     <div id="app">
         <main>
             <h1>Email list:</h1>
-            <ul class="mail-list">
+            <ul class="mail-list" v-if="emailList.length >= 10">
                 <li class="mail-address" v-for="email in emailList"> {{ email }} </li>
             </ul>
         </main>
